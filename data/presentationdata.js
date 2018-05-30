@@ -15,11 +15,16 @@ let presentationData =
                     "eltId": 1,
                     "eltType": "P",
                     "eltContent": "Test paragraph 2"
+                },
+                {
+                    "eltId": 2,
+                    "eltType": "IMG",
+                    "eltContent": "img/test.jpg"
                 }
             ]
         },
         {
-            "slideNr": 0,
+            "slideNr": 1,
             "slideTitle": "Table of contents",
             "elts": [
                 {

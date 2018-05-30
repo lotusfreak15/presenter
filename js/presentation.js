@@ -21,7 +21,11 @@ class Presentation {
 
         for(let i = 0; i < this.slides[this.curSlide].elements.length; i++) {
             let e = document.createElement(this.slides[this.curSlide].elements[i].type);
-            e.appendChild(document.createTextNode(this.slides[this.curSlide].elements[i].content));
+            if(this.slides[this.curSlide].elements[i].type == "IMG") {
+                e.src = this.slides[this.curSlide].elements[i].content;
+            } else {
+                e.appendChild(document.createTextNode(this.slides[this.curSlide].elements[i].content));
+            }
             root.appendChild(e);
         }
     }

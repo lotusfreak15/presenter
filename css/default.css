@@ -21,8 +21,10 @@
 
 #slide-title {
     margin-bottom: 5px;
+    font-size: 54px;
 }
 
-.slide-text {
+#slide-content {
     margin: 0 5px;
+    font-size: 28px;
 }
