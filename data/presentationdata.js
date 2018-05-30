@@ -18,5 +18,21 @@ let presentationData =
                 }
             ]
         },
+        {
+            "slideNr": 0,
+            "slideTitle": "Table of contents",
+            "elts": [
+                {
+                    "eltId": 0,
+                    "eltType": "P",
+                    "eltContent": "Test paragraph"
+                },
+                {
+                    "eltId": 1,
+                    "eltType": "P",
+                    "eltContent": "Test paragraph 2"
+                }
+            ]
+        }
     ]
 }

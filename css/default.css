@@ -9,12 +9,20 @@
     justify-content: center;
     align-items: center; 
     height: 100vh;
-    padding: 0 15px;
 }
 
 #slide {
     background: #fff;
     padding: 5px;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#slide-title {
+    margin-bottom: 5px;
+}
+
+.slide-text {
+    margin: 0 5px;
 }

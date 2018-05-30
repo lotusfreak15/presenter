@@ -8,16 +8,12 @@ class Presentation {
         this.slides.push(slide);
     }
 
-    nextSlide() {
-        if(this.curslide < this.slides.length) {
-            this.curSlide++;
-            this.render();
-        }
-    }
-
     render() {
-        let root = document.querySelector('#slide');
-        let slideTitle = root.querySelector('#slide-title');
+        let root = document.querySelector('#slide-content');
+        let slideTitle = document.querySelector('#slide-title');
+
+        root.innerHTML = "";
+        slideTitle.innerHTML = "";
 
         let titleElt = document.createElement('H2');
         titleElt.appendChild(document.createTextNode(this.slides[this.curSlide].slideTitle));
@@ -27,6 +23,15 @@ class Presentation {
             let e = document.createElement(this.slides[this.curSlide].elements[i].type);
             e.appendChild(document.createTextNode(this.slides[this.curSlide].elements[i].content));
             root.appendChild(e);
+        }
+    }
+
+    nextSlide() {
+        if(this.curSlide < this.slides.length) {
+            this.curSlide++;
+            return true;
+        } else {
+            return false;
         }
     }
 }
