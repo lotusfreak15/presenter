@@ -23,6 +23,8 @@ class Presentation {
             let e = document.createElement(this.slides[this.curSlide].elements[i].type);
             if(this.slides[this.curSlide].elements[i].type == "IMG") {
                 e.src = this.slides[this.curSlide].elements[i].content;
+                e.style.width = this.slides[this.curSlide].elements[i].width;
+                e.style.height = this.slides[this.curSlide].elements[i].height;
             } else {
                 e.appendChild(document.createTextNode(this.slides[this.curSlide].elements[i].content));
             }
@@ -33,6 +35,15 @@ class Presentation {
     nextSlide() {
         if(this.curSlide < this.slides.length) {
             this.curSlide++;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    previousSlide() {
+        if(this.curSlide > 0) {
+            this.curSlide--;
             return true;
         } else {
             return false;

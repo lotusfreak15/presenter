@@ -1,6 +1,7 @@
 let presentationData = 
 {
     "style": "default",
+    "animation": "fadeinout",
     "slides": [
         {
             "slideNr": 0,
@@ -19,7 +20,9 @@ let presentationData =
                 {
                     "eltId": 2,
                     "eltType": "IMG",
-                    "eltContent": "img/test.jpg"
+                    "eltContent": "img/test.jpg",
+                    "width": "25%",
+                    "height": "15%"
                 }
             ]
         },
